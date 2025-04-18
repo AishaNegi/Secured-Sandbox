@@ -1,0 +1,119 @@
+:root {
+    --bg-color: #f9fafb;
+    --text-color: #111827;
+    --box-bg: #ffffff;
+    --border-color: #d1d5db;
+    --button-bg: #3b82f6;
+    --button-hover: #2563eb;
+    --output-bg: #f3f4f6;
+  }
+  
+  body.dark {
+    --bg-color: #1e293b;
+    --text-color: #f3f4f6;
+    --box-bg: #111827;
+    --border-color: #374151;
+    --button-bg: #6366f1;
+    --button-hover: #4f46e5;
+    --output-bg: #1f2937;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .app-container {
+    background: var(--box-bg);
+    border-radius: 1rem;
+    padding: 2rem;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header and Toolbar */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  header h1 {
+    font-size: 1.8rem;
+  }
+  .toolbar {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  select, button {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: var(--button-hover);
+    color: white;
+  }
+  
+  /* Form */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  textarea {
+    height: 250px;
+    padding: 1rem;
+    font-family: monospace;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    background-color: var(--output-bg);
+    margin-bottom: 1rem;
+    resize: vertical;
+    color: var(--text-color);
+  }
+  
+  .code-options {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  
+  /* Output */
+  .output-section {
+    background: var(--output-bg);
+    padding: 1rem;
+    border-left: 5px solid var(--button-bg);
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+  }
+  pre {
+    white-space: pre-wrap;
+    font-family: monospace;
+    font-size: 1rem;
+  }
+  #execTime {
+    margin-top: 0.5rem;
+    font-style: italic;
+    font-size: 0.95rem;
+  }
+  

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🛡️ Secure Python Sandbox</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>🛡️ Secure Python Sandbox</h1>
+      <div class="toolbar">
+        <button id="toggleTheme">🌗 Theme</button>
+        <button id="downloadCode">⬇️ Download</button>
+      </div>
+    </header>
+
+    <form id="codeForm">
+      <label for="codeInput">Enter Python Code:</label>
+      <textarea id="codeInput" placeholder="print('Hello from the sandbox!')" required></textarea>
+      <div class="code-options">
+        <button type="submit">🚀 Run (Ctrl + Enter)</button>
+      </div>
+    </form>
+
+    <div class="output-section">
+      <h2>🧾 Output:</h2>
+      <pre id="outputText">Submit your code to see results here...</pre>
+      <p id="execTime"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
